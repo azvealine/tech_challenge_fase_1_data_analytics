@@ -42,6 +42,7 @@ Execute a aplicação Streamlit:
 
 Bash
 streamlit run analise/app_streamlit.py
+```
 👨‍💻 Autor
 Aline Azevedo
 
