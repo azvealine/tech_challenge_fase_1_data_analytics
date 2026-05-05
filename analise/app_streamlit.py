@@ -37,7 +37,6 @@ REGIOES_MAP = {
 # ============================================================
 # BARRA LATERAL (FILTROS ESTRATÉGICOS)
 # ============================================================
-st.sidebar.image("https://logopng.com.br/logos/olist-125.png", width=150)
 st.sidebar.header("🎯 Filtros Estratégicos")
 
 # 1. Período com 2018 como Padrão (AGORA COMO RANGE SLIDER)
@@ -419,7 +418,7 @@ with col_risco2:
     pct_risco = (len(vendedor_lento_entrega_ok) / len(pedidos_logistica)) * 100
     st.metric("Exposição ao Risco", f"{pct_risco:.1f}%", help="Percentual de pedidos que quase atrasaram por culpa do vendedor.")
 
-st.warning("💡 **Insight de Risco:** 27.4% da nossa operação depende da transportadora compensar a lentidão do lojista. Se houver qualquer greve ou problema na malha, todos esses pedidos se tornam atrasos críticos imediatamente.")
+st.warning("💡 **Insight de Risco:** 24.3% da nossa operação depende da transportadora compensar a lentidão do lojista. Se houver qualquer greve ou problema na malha, todos esses pedidos se tornam atrasos críticos imediatamente.")
 
 # 3. Top 5 Rotas com Maior % de Atraso
 st.markdown("---")

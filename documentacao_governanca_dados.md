@@ -6,7 +6,7 @@ Este documento estabelece as diretrizes de governança e arquitetura de dados ap
 O foco desta documentação é garantir:
 *   **Transparência:** Documentação clara de fontes e dicionário de dados.
 *   **Qualidade (Data Observability):** Regras rigorosas de validação e limpeza.
-*   **Single Source of Truth (SSOT):** Centralização das regras de negócio em uma base única.
+*   **Source of Truth (SOT):** Centralização das regras de negócio em uma base única.
 *   **Reprodutibilidade:** Garantia de execução determinística do processo analítico.
 
 ---
@@ -37,7 +37,7 @@ A função `limpar_dados` atua como o primeiro filtro de qualidade, executando:
 3.  **Higienização de Strings:** Aplicação de `strip()` em variáveis do tipo `object` para remover espaços invisíveis.
 
 ### 3.2. Transformações e Regras de Negócio (Camada Silver/Gold)
-O pipeline constrói a *Single Source of Truth* (`df_full`) aplicando as seguintes lógicas:
+O pipeline constrói a *Source of Truth(SOT)* (`df_full`) aplicando as seguintes lógicas:
 *   **Tipagem Dinâmica:** Conversão massiva de colunas de data em `orders` para formato `datetime` via `pd.to_datetime(..., errors='coerce')`.
 *   **Filtro de Status:** Seleção estrita de pedidos finalizados (`order_status == 'delivered'`).
 *   **Feature Engineering:** Criação da feature financeira macro: `total_value = price + freight_value`.
