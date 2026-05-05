@@ -1,6 +1,6 @@
 # 📦 Olist Analytics: Diagnóstico Logístico e Motor Preditivo de SLA
 
-![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.13+-blue.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B.svg)
 ![Pandas](https://img.shields.io/badge/Pandas-Data_Engineering-150458.svg)
 ![FIAP](https://img.shields.io/badge/FIAP-Tech_Challenge-ED145B.svg)

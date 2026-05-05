@@ -6,7 +6,7 @@ Este documento estabelece as diretrizes de governança e arquitetura de dados ap
 O foco desta documentação é garantir:
 *   **Transparência:** Documentação clara de fontes e dicionário de dados.
 *   **Qualidade (Data Observability):** Regras rigorosas de validação e limpeza.
-*   **Single Source of Truth (SSOT):** Centralização das regras de negócio em uma base única.
+*   **Source of Truth (SOT):** Centralização das regras de negócio em uma base única.
 *   **Reprodutibilidade:** Garantia de execução determinística do processo analítico.
 
 ---
